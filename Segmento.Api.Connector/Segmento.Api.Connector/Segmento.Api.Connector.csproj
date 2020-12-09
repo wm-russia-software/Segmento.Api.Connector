@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Description>Library provides functionality for connecting and using methods to Segmento API.</Description>
+    <Description>Library provides functionality for connecting and using methods of Segmento API.</Description>
     <Copyright>Copyright © Wavemaker 2020</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Wavemaker</Authors>
