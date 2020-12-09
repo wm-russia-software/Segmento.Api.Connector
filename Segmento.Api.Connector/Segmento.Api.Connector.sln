@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segmento.Api.Connector", "Segmento.Api.Connector\Segmento.Api.Connector.csproj", "{EAE8C389-B734-470C-B8B6-344D27200D9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{670E54B7-7415-4621-853B-6325B8232D9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segmento.Api.Connector.Tests.App", "Segmento.Api.Connector.Tests.App\Segmento.Api.Connector.Tests.App.csproj", "{100115BC-FE50-4A04-AAE2-8A86F16DEDB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAE8C389-B734-470C-B8B6-344D27200D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE8C389-B734-470C-B8B6-344D27200D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE8C389-B734-470C-B8B6-344D27200D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE8C389-B734-470C-B8B6-344D27200D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100115BC-FE50-4A04-AAE2-8A86F16DEDB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100115BC-FE50-4A04-AAE2-8A86F16DEDB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100115BC-FE50-4A04-AAE2-8A86F16DEDB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100115BC-FE50-4A04-AAE2-8A86F16DEDB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{100115BC-FE50-4A04-AAE2-8A86F16DEDB0} = {670E54B7-7415-4621-853B-6325B8232D9A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A744CB3C-46CF-4D8B-87DF-065B2EEE1D7C}
+	EndGlobalSection
+EndGlobal

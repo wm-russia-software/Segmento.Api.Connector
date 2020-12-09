@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>Library provides functionality for connecting and using methods to Segmento API.</Description>
+    <Copyright>Copyright © Wavemaker 2020</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Wavemaker</Authors>
+    <Version>1.0.3</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon></PackageIcon>
+    <RepositoryUrl>https://github.com/wm-russia-software/Segmento.Api.Connector</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>wavemaker segmento api connector wm</PackageTags>
+    <PackageProjectUrl>https://github.com/wm-russia-software/Segmento.Api.Connector</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ak.Framework.Core" Version="2.0.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
+  </ItemGroup>
+
+</Project>
