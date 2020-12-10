@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Segmento.Api.Connector</name>
+    </assembly>
+    <members>
+        <member name="T:Segmento.Api.Connector.Authentication">
+            <summary>
+            Класс для работы с аутентификацией
+            </summary>
+        </member>
+        <member name="M:Segmento.Api.Connector.Authentication.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:Segmento.Api.Connector.Authentication.#ctor(System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="apiUrl">Url для доступа к Api</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.Authentication.GetToken(System.String,System.String)">
+            <summary>
+            Получение токена
+            </summary>
+            <param name="login">Логин</param>
+            <param name="password">Пароль</param>
+            <returns></returns>
+        </member>
+        <member name="T:Segmento.Api.Connector.BaseApiHandler">
+            <summary>
+            Базовый обработчик API
+            </summary>
+        </member>
+        <member name="F:Segmento.Api.Connector.BaseApiHandler.CommonApiUrl">
+            <summary>
+            Url для доступа к Api
+            </summary>
+        </member>
+        <member name="F:Segmento.Api.Connector.BaseApiHandler.DefaultRequestTimeout">
+            <summary>
+            Таймаут между запросами
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.BaseApiHandler.ApiUrl">
+            <summary>
+            Url для доступа к Api
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.BaseApiHandler.RequestTimeout">
+            <summary>
+            Таймаут между запросами
+            </summary>
+        </member>
+        <member name="M:Segmento.Api.Connector.BaseApiHandler.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:Segmento.Api.Connector.BaseApiHandler.#ctor(System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="apiUrl">Url для доступа к Api</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.BaseApiHandler.AddDefaultHeaders(RestSharp.RestRequest)">
+            <summary>
+            Добавление заголовков запроса по умолчанию
+            </summary>
+            <param name="request">Запроса</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.BaseApiHandler.Wait">
+            <summary>
+            Ожидание
+            </summary>
+        </member>
+        <member name="T:Segmento.Api.Connector.BaseTokenApiHandler">
+            <summary>
+            Базовый обработчик API
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.BaseTokenApiHandler.Token">
+            <summary>
+            Токен
+            </summary>
+        </member>
+        <member name="M:Segmento.Api.Connector.BaseTokenApiHandler.#ctor(System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="token">Токен</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.BaseTokenApiHandler.#ctor(System.String,System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="apiUrl">Url для доступа к Api</param>
+            <param name="token">Токен</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.BaseTokenApiHandler.AddDefaultHeaders(RestSharp.RestRequest)">
+            <summary>
+            Добавление заголовков запроса по умолчанию
+            </summary>
+            <param name="request">Запрос</param>
+        </member>
+        <member name="T:Segmento.Api.Connector.Campaigns">
+            <summary>
+             Класс для работы с кампаниями
+            </summary>
+            <seealso cref="T:Segmento.Api.Connector.BaseTokenApiHandler" />
+        </member>
+        <member name="M:Segmento.Api.Connector.Campaigns.#ctor(System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="token">Токен</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.Campaigns.#ctor(System.String,System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="apiUrl">Url для доступа к Api</param>
+            <param name="token">Токен</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.Campaigns.GetCampaigns(System.Int32)">
+            <summary>
+            Получение списка кампаний
+            </summary>
+            <param name="clientId">Идентификатор клиента</param>
+            <returns></returns>
+        </member>
+        <member name="T:Segmento.Api.Connector.Clients">
+            <summary>
+             Класс для работы с клиентами
+            </summary>
+            <seealso cref="T:Segmento.Api.Connector.BaseTokenApiHandler" />
+        </member>
+        <member name="M:Segmento.Api.Connector.Clients.#ctor(System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="token">Токен</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.Clients.#ctor(System.String,System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="apiUrl">Url для доступа к Api</param>
+            <param name="token">Токен</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.Clients.GetClients">
+            <summary>
+            Получение списка клиентов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Segmento.Api.Connector.Models.Campaign">
+            <summary>
+            Кампания
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.Campaign.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.Campaign.Name">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.Campaign.SubCampaigns">
+            <summary>
+            Подкампании
+            </summary>
+        </member>
+        <member name="T:Segmento.Api.Connector.Models.Client">
+            <summary>
+            Клиент
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.Client.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.Client.Name">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="T:Segmento.Api.Connector.Models.DataContainer`1">
+            <summary>
+            Контейнер данных
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.DataContainer`1.Values">
+            <summary>
+            Элементы
+            </summary>
+        </member>
+        <member name="T:Segmento.Api.Connector.Models.StatisticsItem">
+            <summary>
+            Элемент статистики
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.Date">
+            <summary>
+            Дата
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.Impressions">
+            <summary>
+            Количество показов 
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.ViewableImpressions">
+            <summary>
+            Количество видимых показов
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.Clicks">
+            <summary>
+            Количество кликов
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.PostClicks">
+            <summary>
+            Количество post-click конверсий
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.LastClicks">
+            <summary>
+            Количество last-click конверсий
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.PostViews30Days">
+            <summary>
+            Количество post-view конверсий совершенных после просмотра рекламы до 30 дней до совершения конверсии
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.PostViews3Days">
+            <summary>
+            Количество post-view конверсий совершенных после просмотра рекламы до 3 дней до совершения конверсии
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.Sessions">
+            <summary>
+            Количество сессий
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.PostViewSessions">
+            <summary>
+            Количество сессий после просмотра рекламы
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.PostViewVisitors">
+            <summary>
+            Количество уникальных пользователей после просмотра рекламы 
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.VideoComplete">
+            <summary>
+            Количество досмотров видео 
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.ClientCost">
+            <summary>
+            Стоимость для клиента 
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.MeanDuration">
+            <summary>
+            Время на сайте
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.PageDepth">
+            <summary>
+            Глубина просмотра
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.StatisticsItem.BounceRate">
+            <summary>
+            Время на сайте
+            </summary>
+        </member>
+        <member name="T:Segmento.Api.Connector.Models.SubCampaign">
+            <summary>
+            Подкампания
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.SubCampaign.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.SubCampaign.Name">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.SubCampaign.StartDate">
+            <summary>
+            Начальная дата
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.SubCampaign.EndDate">
+            <summary>
+            Конечная дата
+            </summary>
+        </member>
+        <member name="T:Segmento.Api.Connector.Models.Token">
+            <summary>
+            Токен
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.Token.AccessToken">
+            <summary>
+            Токен доступа
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.Token.TokenType">
+            <summary>
+            Тип токена
+            </summary>
+        </member>
+        <member name="P:Segmento.Api.Connector.Models.Token.ExpiringTime">
+            <summary>
+            Время жизни
+            </summary>
+        </member>
+        <member name="T:Segmento.Api.Connector.Statistics">
+            <summary>
+             Класс для получения статистических отчетов
+            </summary>
+            <seealso cref="T:Segmento.Api.Connector.BaseTokenApiHandler" />
+        </member>
+        <member name="M:Segmento.Api.Connector.Statistics.#ctor(System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="token">Токен</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.Statistics.#ctor(System.String,System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="apiUrl">Url для доступа к Api</param>
+            <param name="token">Токен</param>
+        </member>
+        <member name="M:Segmento.Api.Connector.Statistics.GetStatisticsReport(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            Получение основного статистического отчета
+            </summary>
+            <param name="campaignId">Идентификатор кампании</param>
+            <param name="startDate">Начальная дата</param>
+            <param name="endDate">Конечная дата</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
