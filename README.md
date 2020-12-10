@@ -22,7 +22,8 @@ List<Client> clients = new Clients(token.AccessToken).GetClients();
 // Getting campaigns list
 List<Campaign> campaigns = new Campaigns(token.AccessToken).GetCampaigns(clientId);
 // Getting statistics report
-List<StatisticsItem> s = new Statistics(token.AccessToken).GetStatisticsReport(campaignId, startDate, endData);
+List<StatisticsItem> s = new Statistics(token.AccessToken)
+                            .GetStatisticsReport(campaignId, startDate, endData);
 ```
 
 For full classes and methods description take a look at our [documentation](https://github.com/wm-russia-software/Segmento.Api.Connector/wiki) (right now it is available only in Russian).
