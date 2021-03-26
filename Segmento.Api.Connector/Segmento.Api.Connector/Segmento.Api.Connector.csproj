@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Description>Library provides functionality for connecting and using methods of Segmento API.</Description>
-    <Copyright>Copyright © Wavemaker 2020</Copyright>
+    <Copyright>Copyright © Wavemaker 2021</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Wavemaker</Authors>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon></PackageIcon>
@@ -21,9 +21,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ak.Framework.Core" Version="2.0.7" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="RestSharp" Version="106.10.1" />
+    <PackageReference Include="Ak.Framework.Core" Version="2.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
   </ItemGroup>
 
 </Project>

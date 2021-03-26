@@ -4,11 +4,11 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Authors>Wavemaker</Authors>
-    <Copyright>Copyright © Wavemaker 2020</Copyright>
+    <Copyright>Copyright © Wavemaker 2021</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ak.Framework.Core" Version="2.0.7" />
+    <PackageReference Include="Ak.Framework.Core" Version="2.3.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
 
